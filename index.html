@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web App</title>
+    <title>My Simple Frontend</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Web App</h1>
-    <!-- Your frontend content goes here -->
+    <div class="container">
+        <h1>User Registration</h1>
+        <form id="userForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+        <div id="userList">
+            <!-- Display user list here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
